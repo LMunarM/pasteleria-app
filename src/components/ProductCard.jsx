@@ -16,7 +16,7 @@ export default function ProductCard({ product, cartItem, onUpdateQuantity }) {
             onClick={() => onUpdateQuantity(product, 1)}
             tabIndex="0"
           >
-            <img src="/assets/images/icon-add-to-cart.svg" alt="" />
+            <img src="./assets/images/icon-add-to-cart.svg" alt="" />
             Anadir al carrito
           </button>
         ) : (
@@ -26,7 +26,7 @@ export default function ProductCard({ product, cartItem, onUpdateQuantity }) {
               onClick={() => onUpdateQuantity(product, -1)}
               aria-label="Disminuir cantidad"
             >
-              <img src="/assets/images/icon-decrement-quantity.svg" alt="-" />
+              <img src="./assets/images/icon-decrement-quantity.svg" alt="-" />
             </button>
             <span className="qty-text">{quantity}</span>
             <button 
@@ -34,7 +34,7 @@ export default function ProductCard({ product, cartItem, onUpdateQuantity }) {
               onClick={() => onUpdateQuantity(product, 1)}
               aria-label="Aumentar cantidad"
             >
-              <img src="/assets/images/icon-increment-quantity.svg" alt="+" />
+              <img src="./assets/images/icon-increment-quantity.svg" alt="+" />
             </button>
           </div>
         )}
